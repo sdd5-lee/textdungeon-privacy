@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TextDungeon プライバシーポリシー</title>
+<!-- 한국어 원본(../)의 번역. 원본을 고치면 이 파일도 같이 고친다 -->
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1d1d1f;
+    --muted: #5f6368;
+    --line: #dadce0;
+    --head: #f1f3f4;
+    --accent: #1a73e8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17181a;
+      --fg: #e8eaed;
+      --muted: #9aa0a6;
+      --line: #3c4043;
+      --head: #202124;
+      --accent: #8ab4f8;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Yu Gothic", sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin: 36px 0 8px; padding-top: 8px; border-top: 1px solid var(--line); }
+  p, li { margin: 6px 0; }
+  .meta { color: var(--muted); margin-bottom: 24px; }
+  a { color: var(--accent); }
+  .table-wrap { overflow-x: auto; margin: 12px 0; }
+  table { border-collapse: collapse; width: 100%; min-width: 560px; font-size: 0.93rem; }
+  th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: var(--head); white-space: nowrap; }
+  .lang { font-size: 0.9rem; margin: 0 0 16px; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<nav class="lang"><a href="../" hreflang="ko">한국어</a> · <a href="../en/" hreflang="en">English</a> · <strong>日本語</strong></nav>
+<h1>TextDungeon プライバシーポリシー</h1>
+<p class="meta">施行日：2026年11月12日</p>
+<p class="meta">このページは韓国語の原文を翻訳したものです。内容に違いがある場合は<a href="../">韓国語版</a>が優先されます。</p>
+
+<p>イ・ギョンジェ（以下「開発者」）は、TextDungeonアプリ（以下「アプリ」）を利用する方の個人情報を大切にし、韓国の「個人情報保護法」などの関係法令を守ります。このポリシーでは、アプリがどのような情報を、誰に、なぜ送るのかをお知らせします。</p>
+
+<h2>1. アプリが扱う情報</h2>
+<ul>
+  <li>アプリはログインしなくても利用でき、名前や電話番号などの情報を直接入力していただくことはありません。</li>
+  <li>ログインしない場合、ゲームの進行記録、通貨（ジェム・ゴールド）、解放の記録、設定はご利用の端末の中だけに保存されます。</li>
+  <li>設定の「Googleアカウント連携」をご自身でオンにした場合にのみ、Googleアカウントでログインします。このとき、Googleアカウントのメールアドレス、名前、プロフィール写真のURL、アカウント識別子がFirebase Authenticationに保存され、ゲームの進行記録・通貨・解放の記録がCloud Firestoreに保存されます。これらの情報は、記録のバックアップと他の端末での続きのプレイにのみ使います。</li>
+  <li>開発者は独自のサーバーを運営していません。上記の情報はGoogleのFirebaseに保管されます。</li>
+  <li>アプリが使う権限は、インターネット接続、ネットワーク状態の確認、広告IDと広告測定（AdMob）、Google Playの決済です。広告・決済機能が使う基本的な権限（処理中に端末がスリープしないようにする権限など）も含まれます。位置情報、連絡先、写真、カメラ、マイクの権限は使いません。</li>
+</ul>
+
+<h2>2. 外部サービスが処理する情報</h2>
+<p>アプリの一部の機能は、以下の会社のサービスを利用します。このとき情報はご利用の端末から各社に直接送信され、各社のプライバシーポリシーに従って処理されます。すべての送信は暗号化された接続（HTTPS）で行われます。</p>
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr><th>サービス</th><th>処理する情報</th><th>目的</th><th>いつ</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Google AdMob<br>（Google LLC）</td>
+      <td>広告ID、アプリセットIDなどの端末識別子、IPアドレス（おおよその位置の推定に使われることがあります）、広告の表示・タップなどの利用記録、アプリの起動時間などのパフォーマンス情報</td>
+      <td>リワード広告の提供、広告成果の測定、不正利用の防止</td>
+      <td>アプリの実行中。「広告スキップ」を購入した場合は広告機能をオンにしません。</td>
+    </tr>
+    <tr>
+      <td>Google Playの決済<br>（Google LLC）</td>
+      <td>購入したアイテム、注文番号、購入確認の情報</td>
+      <td>有料アイテムの決済、購入の確認と復元</td>
+      <td>購入するとき、または「購入の復元」を押したとき。カード番号などの支払い方法はGoogle Playが処理し、開発者は受け取りません。</td>
+    </tr>
+    <tr>
+      <td>Firebase Authentication、Cloud Firestore<br>（Google LLC）</td>
+      <td>Googleアカウントのメールアドレス・名前・プロフィール写真のURL・アカウント識別子、ゲームの進行記録・通貨・解放の記録、IPアドレスなどの通信情報</td>
+      <td>ログイン、ゲーム記録のバックアップと他の端末での続きのプレイ</td>
+      <td>「Googleアカウント連携」がオンの間。オンにしなければ送信しません。</td>
+    </tr>
+    <tr>
+      <td>Hugging Face<br>（Hugging Face, Inc.）</td>
+      <td>IPアドレスなどダウンロードに必要な通信情報</td>
+      <td>端末の中で動くAIモデルファイル（約2.6GB）のダウンロード</td>
+      <td>モデルを初めてダウンロードするとき。設定でAIモデルのダウンロードをオフにするとダウンロードせず、ダウンロード済みのファイルも削除します。</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p>ゲーム開始時に登場する神々のイベントと「混沌のサイコロ」のAI選択肢は、ご利用の端末の中のモデルが作成し、ゲームの内容を外部に送ることはありません。</p>
+
+<h2>3. 国外への移転</h2>
+<p>上記2の情報は、アプリの利用中にネットワークを通じて以下の国の会社に送信されます。</p>
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr><th>移転先</th><th>国</th><th>項目</th><th>目的</th><th>保有期間</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Google LLC</td>
+      <td>アメリカ</td>
+      <td>広告IDなどの端末識別子、IPアドレス、広告の利用記録、パフォーマンス情報、購入情報。アカウントを連携した場合はGoogleアカウントの情報（メールアドレス・名前・プロフィール写真のURL・アカウント識別子）とゲーム記録</td>
+      <td>広告の提供、決済、ログインとゲーム記録のバックアップ</td>
+      <td>Googleのプライバシーポリシーに従います。アカウント情報とゲーム記録は利用者が削除を求めるまで</td>
+    </tr>
+    <tr>
+      <td>Hugging Face, Inc.</td>
+      <td>アメリカ</td>
+      <td>IPアドレスなどの通信情報</td>
+      <td>AIモデルファイルのダウンロード</td>
+      <td>Hugging Faceのプライバシーポリシーに従います</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p>移転を望まない場合は、下記5の方法で広告IDを削除する、AIモデルのダウンロードをオフにする、Googleアカウントを連携しない、またはアプリの利用をやめることができます。その場合、パーソナライズ広告、端末内AI、クラウドバックアップなど一部の機能が制限されることがあります。</p>
+
+<h2>4. 保有期間と破棄</h2>
+<ul>
+  <li>Googleアカウントを連携した場合、アカウント情報とクラウドに保存されたゲーム記録は、利用者が削除を求めるまで保管します。削除を求められたときは遅滞なく削除します（7を参照）。連携していない利用者の情報は、開発者は保管しません。</li>
+  <li>端末に保存されたゲーム記録と設定は、アプリを削除するか、端末の設定でアプリのデータを消去すると一緒に削除されます。ただし有料アイテムの購入記録はGoogle Playアカウントに残り、再インストール後に「購入の復元」で取り戻せます。</li>
+  <li>外部サービスが処理した情報は、各社のポリシーに従って保管・破棄されます。</li>
+</ul>
+
+<h2>5. パーソナライズ広告と拒否の方法</h2>
+<p>AdMobは広告IDを使って、興味・関心に合わせた広告を表示することがあります。望まない場合は、端末の設定 → プライバシー（Samsungの端末ではセキュリティとプライバシー）→ 広告 から広告IDを削除またはリセットできます。広告IDを削除しても広告は表示されることがありますが、パーソナライズ広告ではなくなります。</p>
+<p>欧州経済領域、イギリス、スイスの利用者には、初回起動時に広告の同意画面が表示されます。選んだ内容は、アプリの設定 → 広告のプライバシー設定でいつでも変更できます。</p>
+
+<h2>6. 子どもの個人情報</h2>
+<p>アプリは16歳以上の方を対象としており、子ども向けのサービスではありません。子どもの情報が処理されたことが分かった場合は、下記の連絡先までお知らせください。</p>
+
+<h2>7. 利用者の権利</h2>
+<p>利用者はいつでも、端末に保存された情報を削除したり（アプリのデータの消去、アプリの削除）、広告IDを削除したりできます。外部サービスが処理した情報の閲覧・削除は各社に求めることができます。ご質問やご要望は下記の連絡先までお送りください。</p>
+<p><strong>アカウントとクラウドの記録の削除：</strong>設定の「Googleアカウント連携」でログアウトすると、その端末からは記録をアップロードしなくなります。すでに保存されたアカウント情報とクラウドのゲーム記録を削除するには、連携したGoogleアカウントのメールアドレスから9の連絡先に削除をご依頼ください。確認したうえで遅滞なくすべて削除します。端末に残った記録は削除されません。</p>
+<ul>
+  <li><a href="https://policies.google.com/privacy?hl=ja">Google プライバシーポリシー</a></li>
+  <li><a href="https://huggingface.co/privacy">Hugging Face プライバシーポリシー</a></li>
+</ul>
+
+<h2>8. 安全確保のための措置</h2>
+<p>外部サービスとのすべての通信は暗号化（HTTPS）されます。開発者は独自のサーバーを運営していません。アカウントを連携した利用者のアカウント情報とゲーム記録は、GoogleのFirebaseに保管されます。</p>
+
+<h2>9. 個人情報保護責任者</h2>
+<ul>
+  <li>氏名：イ・ギョンジェ（Kyungjae Lee）</li>
+  <li>メール：<a href="mailto:rudwo6285@gmail.com">rudwo6285@gmail.com</a></li>
+</ul>
+
+<h2>10. 権利侵害の救済方法</h2>
+<p>個人情報の侵害についての相談や届け出が必要な場合は、以下の韓国の機関にお問い合わせいただけます。</p>
+<ul>
+  <li>個人情報侵害申告センター（KISA）：<a href="https://privacy.kisa.or.kr">privacy.kisa.or.kr</a>、韓国国内から118</li>
+  <li>個人情報紛争調停委員会：<a href="https://www.kopico.go.kr">www.kopico.go.kr</a>、1833-6972</li>
+  <li>大検察庁：<a href="https://www.spo.go.kr">www.spo.go.kr</a>、韓国国内から1301</li>
+  <li>警察庁：<a href="https://ecrm.police.go.kr">ecrm.police.go.kr</a>、韓国国内から182</li>
+</ul>
+
+<h2>11. ポリシーの変更</h2>
+<p>このポリシーを変更する場合は、施行の7日前までにこのページでお知らせします。利用者に不利となる重要な変更は30日前までにお知らせします。</p>
+</main>
+</body>
+</html>

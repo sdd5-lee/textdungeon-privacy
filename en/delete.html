@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TextDungeon Account Deletion</title>
+<!-- 한국어 원본(../delete.html)의 번역. 원본을 고치면 이 파일도 같이 고친다 -->
+<style>
+  :root { --bg: #ffffff; --fg: #1d1d1f; --muted: #5f6368; --line: #dadce0; --head: #f1f3f4; --accent: #1a73e8; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #17181a; --fg: #e8eaed; --muted: #9aa0a6; --line: #3c4043; --head: #202124; --accent: #8ab4f8; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin: 36px 0 8px; padding-top: 8px; border-top: 1px solid var(--line); }
+  p, li { margin: 6px 0; }
+  .meta { color: var(--muted); margin-bottom: 24px; }
+  a { color: var(--accent); }
+  .table-wrap { overflow-x: auto; margin: 12px 0; }
+  table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: 0.93rem; }
+  th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: var(--head); white-space: nowrap; }
+  .lang { font-size: 0.9rem; margin: 0 0 16px; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<nav class="lang"><a href="../delete.html" hreflang="ko">한국어</a> · <strong>English</strong> · <a href="../ja/delete.html" hreflang="ja">日本語</a></nav>
+<h1>Delete your TextDungeon account and data</h1>
+<p class="meta">Developer: Kyungjae Lee · Last updated: November 12, 2026</p>
+<p class="meta">This is a translation of the Korean original. If the two differ, the <a href="../delete.html">Korean version</a> prevails.</p>
+
+<p>You can use TextDungeon (the "App") without signing in. This page explains how users who signed in with "Link Google Account" in Settings can delete their account and the records backed up to the cloud.</p>
+
+<h2>1. Delete in the App</h2>
+<ol>
+  <li>Open Settings from the App's main screen.</li>
+  <li>On the "Account" tab, tap "Link Google Account".</li>
+  <li>Tap <strong>"Delete account and cloud records"</strong> at the bottom, then tap "Delete" in the confirmation window.</li>
+  <li>To confirm it is you, choose the linked Google account once more. The data is deleted right away.</li>
+</ol>
+
+<h2>2. Request without the App</h2>
+<p>If you have already uninstalled the App or cannot delete in the App, send an email from the email address of the linked Google account to the address below.</p>
+<ul>
+  <li>To: <a href="mailto:rudwo6285@gmail.com?subject=TextDungeon%20account%20deletion%20request">rudwo6285@gmail.com</a></li>
+  <li>Subject: TextDungeon account deletion request</li>
+</ul>
+<p>To confirm your identity, if the sending address is different from the linked Google account, we may ask you to send it again from that account. We will delete your data within 10 days of receiving the request and tell you the result by email.</p>
+
+<h2>3. Data that is deleted and data that remains</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Data</th><th>What happens</th></tr></thead>
+  <tbody>
+    <tr><td>Google account information (email address, name, profile picture URL, account identifier)</td><td>Deleted</td></tr>
+    <tr><td>Game records backed up to the cloud (progress, currencies, unlocks)</td><td>Deleted</td></tr>
+    <tr><td>Game records stored on your phone</td><td>Remain. To delete them, uninstall the App or clear the App's data in your device settings.</td></tr>
+    <tr><td>Google Play purchase history</td><td>Remains. It is recorded in your Google Play account, and you can get your purchases back with "Restore Purchases" after reinstalling.</td></tr>
+    <tr><td>Information processed by ads (AdMob)</td><td>Under Google's policy. You can delete your advertising ID in your device settings.</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>4. Retention period</h2>
+<p>We do not keep deleted account information or cloud records anywhere else. Because the records are stored in Google's Firebase, it may take some time, under Google's policy, until they are completely removed from Google's backup systems.</p>
+
+<p>For more details, see the <a href="./">Privacy Policy</a>.</p>
+</main>
+</body>
+</html>
